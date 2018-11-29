@@ -19,11 +19,7 @@ int main(){
 		getline(cin, temp.second);
 		users.push_back(temp);
 	}
-/*
-	for(int i=0; i<users.size(); ++i){////////////
-		cout << users[i].first << " " << users[i].second << endl;
-	}///////////////////
-*/
+
 	vector<pair<string,string> >::iterator s1=users.begin(), s2;
 	while(s1!=users.end()){
 		s2=s1;
@@ -36,11 +32,7 @@ int main(){
 		}
 		++s1;
 	}
-/*
-	for(int i=0; i<users.size(); ++i){////////////
-		cout << users[i].first << " " << users[i].second << endl;
-	}///////////////////
-*/
+
 	printf("%lu\n", users.size());
 	return 0;
 }
